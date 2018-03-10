@@ -118,8 +118,9 @@ header{
 }
 
 .projects{
-	width: 90%;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 
 	.portfolio-piece{
 		width: 100%;
@@ -131,7 +132,25 @@ header{
 
 @media screen and (min-width: 768px) {
 
+	.hamburger{
+		display: none;
+	}
+
+	.mobile-nav{
+		width: 22vw;
+		height: 100vh;
+		left: 0;
+		position: fixed;
+
+
+		.x-out{ 
+			display: none;
+		}
+	}
+
 	.projects{
+		width: 70%;
+		margin-left: 25%;
 		display: flex;
 		flex-wrap: wrap;
 

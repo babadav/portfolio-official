@@ -25,6 +25,10 @@ function mobileNav(){
 
 		hamburgerButton.classList.add('hide');
 	})
+
+	if(window.innerWidth > 500){
+		return;
+	}
 }
 
 
