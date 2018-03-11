@@ -4,36 +4,10 @@
 })();
 
 
-function mobileNav(){
-	let mobileNavXOut = document.querySelector('.x-out');
-	let mobileNavContainer = document.querySelector('.mobile-nav');
-	let hamburgerButton = document.querySelector('.hamburger');
+let innerNav =  document.querySelector('.nav-inner');
+let hamburgerButton = document.querySelector('.hamburger');
 
-	mobileNavXOut.addEventListener('click', function(){
-		console.log('x-out');
-		TweenMax.to(mobileNavContainer, .8 , {
-			left: '-100%'
-		})
-		hamburgerButton.classList.remove('hide');
-	})
-
-	hamburgerButton.addEventListener('click', function(){
-		console.log('x-out');
-		TweenMax.to(mobileNavContainer, .8 , {
-			left: '0%'
-		})
-
-		hamburgerButton.classList.add('hide');
-	})
-
-	if(window.innerWidth > 500){
-		return;
-	}
-}
-
-
-
-
-
-
-mobileNav();
+hamburgerButton.addEventListener('click', function(){
+	innerNav.classList.toggle('nav-active')
+	console.log(fuck)
+})

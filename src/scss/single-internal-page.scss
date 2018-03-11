@@ -1,0 +1,80 @@
+.internal-page-main-content, .about-main-content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    .project-title{
+        margin-top: 20%;
+        margin-bottom: 30%;
+
+        h1{
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+
+    .project-description{
+        width: 94%;
+        line-height: 1.5;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+
+    .project-image{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15%;
+        max-width: 450px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .tools-used-wrap{
+        padding-bottom: 10%;
+        .tools-used-title{
+            font-size: 1.3rem;
+            font-weight: 900;
+            margin-bottom: 15%;
+        }
+
+        .technologies-used{
+            font-size: 1.1rem;
+            column-count: 2;
+            h2{
+                margin-bottom: 10%;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .main-content{
+        .project-title{
+            margin-bottom: 20%;
+        }
+
+        .project-description{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 10%;
+            max-width: 720px;
+
+            p{
+                width: 100%;
+            }
+        }
+
+        .tools-used-wrap{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

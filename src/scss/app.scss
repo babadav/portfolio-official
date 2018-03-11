@@ -13,7 +13,8 @@ TABLE OF CONTENTS:
 */
 
 @import 'reset';
-
+@import 'single-internal-page';
+@import 'about.scss';
 
 /* 1. Main Layout ================================= */
 
@@ -27,26 +28,11 @@ body {
 	background-color: black;
 }
 
-header{
-	width: 90%;
-    margin: 0 auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-    .hamburger{
-		width: 40px;
-		position: relative;
-		z-index: 1;
-		height: 40px;
-		transition: all .8s;
-	
-		.bar{
-			width: 50px;
-			height: 5px;
-			background-color: white;
-			margin-bottom: 10px;
-		}
-	}    
+.main-content{
+	width: 100%;
+	background-size: cover;
+	background-image: url(../../src/img/texture.jpg);
+	padding-top: 3%;
 }
 
 .hide{
@@ -59,16 +45,25 @@ header{
 
 .mobile-nav{
 	width: 100%;
-	position: absolute;
-	left: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	left: -100%;
-	top: 0px;
-	background-color: grey;
-	padding-bottom: 40vh;
+	display: flex;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	justify-content: space-around;
+	align-items: center;
+	
+
+	a ,li {
+		text-decoration: none;
+		color: white;
+		transition: all .5s;
+
+		&:hover{
+			opacity: .55;
+		}
+
+
+	}
 
 
 
@@ -80,47 +75,103 @@ header{
 	    
 	}
 	.logo{
-		width: 70%;
-		margin: 0 auto;
+		width: 15%;
 		background-image: url(../../src/img/david.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-		padding-bottom: 70%;
-		max-width: 450px;
-		
+		padding-bottom: 15%;
+		transition: all .5s;
+		max-width: 150px;
+
+		&:hover{
+			opacity: .55;
+			transform: scale(1.1)
+		}
 	}
 
-	ul{
-	    margin: 0 auto;
+	.nav-inner{
+		position: absolute;
+		width: 100%;
+		background-color: black;
 		display: flex;
-	    flex-direction: column;
-        align-items: flex-start;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		top: -1500%;
+		transition: all .8s;
+		
+		
+		
+	    
 	    
 
 	    li{
 	    	padding-bottom: 20px;
-	    	font-size: 1.5rem;
+	    	font-size: 3rem;
 	    }
 	}
 
 	.nav-text{
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: center;
-		margin-bottom: 30px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: all .5s;
+
+		&:hover{
+			opacity: .55;
+		}
 
 		p{
 			margin-bottom: 10px;
 		}
+
+		.nav-job-title{
+			font-size: .9rem;
+		}
 	}
+
+	.hamburger{
+		width: 13%;
+		z-index: 1;
+		height: 40px;
+		transition: all .8s;
+		transition: all .5s;
+
+		&:hover{
+			opacity: .55;
+		}
+	
+	
+		.bar{
+			width: 50px;
+			height: 5px;
+			background-color: white;
+			margin-bottom: 10px;
+		}
+	}  
+}
+
+.nav-active{
+	top: 0% !important;
+	
+
 }
 
 .projects{
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+
+	// z-index: 1;
+	// position: relative;
+
+
 
 	.portfolio-piece{
 		width: 100%;
@@ -130,29 +181,36 @@ header{
 	}
 }
 
+video{
+	position: absolute;
+}
+
 @media screen and (min-width: 768px) {
 
-	.hamburger{
-		display: none;
-	}
-
 	.mobile-nav{
-		width: 22vw;
-		height: 100vh;
-		left: 0;
-		position: fixed;
+		padding-top: unset;
+		padding-bottom: unset;
 
+		.logo{
+			padding-bottom: 10%;
+		}
 
-		.x-out{ 
-			display: none;
+		.nav-inner{
+			a, li{
+				font-size: 4rem;
+				margin-bottom: 15%;
+			}
+			
 		}
 	}
+	
 
 	.projects{
-		width: 70%;
-		margin-left: 25%;
+		width: 80%;
+
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: row;
 
 		.portfolio-piece{
 			width: 48%;
@@ -165,6 +223,7 @@ header{
 
 @media screen and (min-width: 1024px) {
 
+	
 	.projects{
 		display: flex;
 		flex-wrap: wrap;
