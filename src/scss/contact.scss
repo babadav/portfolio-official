@@ -1,0 +1,64 @@
+.contact-white-background{
+    .contact-title{
+        margin-top: 20%;
+        margin-bottom: 20%;
+        font-size: 2.5rem;
+
+        span{
+            font-weight: 900;
+            font-style: bold;
+        }
+    }
+
+    .name-job-title, .email-phone{
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+
+        h1{
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: .8rem;
+        }
+    }
+
+    .email-phone{
+        p{
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+    }
+    .gmail-linkedin-wrap{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20%;
+
+        .gmail-icon, .linkedin-icon{
+            width: 80px;
+            background-image: url(../../src/img/gmail-logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-bottom: 60px;
+            background-position: center center;
+            transition: all .3s;
+            filter: grayscale(1);
+
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+
+        .linkedin-icon{
+            background-image: url(../../src/img/linkedin.png)
+        }
+    }
+}
+
