@@ -30,7 +30,7 @@
         width: 80%;
         margin: 0 auto;
         margin-bottom: 15%;
-        max-width: 450px;
+        max-width: 850px;
 
         img{
             width: 100%;
@@ -59,7 +59,7 @@
 @media screen and (min-width: 768px){
     .main-content{
         .project-title{
-            margin-bottom: 20%;
+            margin-bottom: 10%;
         }
 
         .project-description{
@@ -76,6 +76,31 @@
         .tools-used-wrap{
             width: 80%;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .internal-page-main-content, .about-main-content, 
+    .contact-white-background{
+
+        .project-title{
+            margin-top: 5%;
+        }
+
+        .project-image{
+            margin-bottom: 10%;
+        }
+
+        .tools-used-wrap{
+            width: 60%;
+            margin-left: 10%;
+            .tools-used-title{
+                margin-bottom: 10%;
+            }
         }
     }
 }

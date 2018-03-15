@@ -42,8 +42,6 @@ body {
 
 }
 
-
-
 .mobile-nav{
 	width: 100%;
 	display: flex;
@@ -52,6 +50,11 @@ body {
 	padding-bottom: 5%;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 100;
+
+	ul{
+		text-align: center;
+	}
 	
 
 	a ,li {
@@ -60,7 +63,8 @@ body {
 		transition: all .5s;
 
 		&:hover{
-			opacity: .55;
+
+			color: RGBA(114, 188, 147, 1.00);
 		}
 
 
@@ -169,22 +173,98 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	// z-index: 1;
-	// position: relative;
-
-
+	.two-halves-container{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		
+	}
 
 	.portfolio-piece{
 		width: 100%;
 		padding-bottom: 200px;
 		background-color: #ccc;
 		margin-bottom: 10px;
+		background-size: cover;
+		background-position: center center;
+		padding-bottom: 62%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		align-items: center;
+
+		&:hover{
+			.project{
+				h1{
+					opacity: 1;
+					color: RGBA(114, 188, 147, 1.00);
+				}
+			}
+			
+			
+		}
+		
+		.project{
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+
+			
+
+			h1{
+				width: 100%;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color:rgba(0,0,0,.5);
+				color: white;
+				font-size: 1.8rem;
+				transition: all .8s;
+				opacity: 0;
+
+				
+			}
+		}
+	}
+
+	.tesla-project{
+		background-image: url(../../src/img/project-snap-shots/tesla.png);
+	}
+
+	.pukka-project{
+		background-image: url(../../src/img/project-snap-shots/pukka.png);
+	}
+
+	.slipstream-project{
+		background-image: url(../../src/img/project-snap-shots/slipstream.png);
+		background-position: right;
+	}
+
+	.rollingstone-project{
+		background-image: url(../../src/img/project-snap-shots/led-zep.png);
+	}
+
+	.google-yelp-project{
+		background-image: url(../../src/img/project-snap-shots/google-yelp.png);
+	}
+
+	.vital-project{
+		background-image: url(../../src/img/project-snap-shots/vital.png);
+	}
+
+	.smithsonian-project{
+		background-image: url(../../src/img/project-snap-shots/smithsonian.png);
+		background-position: top;
+	}
+
+	.one-bite2go-project{
+		background-image: url(../../src/img/project-snap-shots/1bite2go.png);
 	}
 }
 
-video{
-	position: absolute;
-}
+
 
 @media screen and (min-width: 768px) {
 
@@ -213,8 +293,12 @@ video{
 		flex-wrap: wrap;
 		flex-direction: row;
 
+		.two-halves-container{
+			flex-direction: row;
+		}
+
 		.portfolio-piece{
-			width: 48%;
+			width: 100%;
 			margin-right: 10px;
 			padding-bottom: 40%;
 		}
@@ -226,13 +310,46 @@ video{
 
 	
 	.projects{
+		width: 94%;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.two-halves-container{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.portfolio-piece{
+				width: 48%;
+
+			}
+
+			
+		}
 
 		.portfolio-piece{
 			width: 31%;
-			margin-right: 10px;
+			// margin-right: 10px;
+			margin-right: 0;
 			padding-bottom: 40%;
+			margin-bottom: 2%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+
+		
+		}
+
+		.tesla-project, .rollingstone-project,
+		.smithsonian-project{
+			width: 100%;
+		}
+
+		.pukka-project, .slipstream-project,
+		.google-yelp-project, .vital-project,
+		.one-bite2go-project{
+			width: 50%;
 		}
 	}
 

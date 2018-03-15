@@ -1,81 +1,107 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- NOOBS: if you're working in plain old CSS, do so in dist/css and use these style tags -->
-		<!-- <link rel="stylesheet" href="dist/css/reset.css">
-		<link rel="stylesheet" href="dist/css/main.css"> -->
-
-		<!-- LEETS: if you want to use transpiled SASS files, do so in src/scss, and use this style tag -->
-		<link rel="stylesheet" href="dist/css/app.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-
-		<!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
-
-	</head>
-	<body>
-	
-			<nav class="mobile-nav">
-				<a class="logo" href="index.html"></a>
-				<div class="nav-text">
-					<p class="nav-name">david | babayev</p>
-					<p class="nav-job-title">front end web developer</p>
-				</div>
-				<div class="nav-inner">
-					<ul>
-						<a href="index.html"><li>work</li></a>
-						<a href="about.html"><li>about</li></a>
-						<a href="contact.html"><li>contact</li></a>
-						<a href=""><li>resumé</li></a>
-						
-					</ul>
-				</div>
-				
-				<div class="hamburger">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</div>
-			</nav>
-
-		
-		
-
-	
-
-		<!-- <video src="src/video/My Movie.mp4" autoplay></video> -->
-		<div class="main-content">
-				<section class="projects">
-						<div class="portfolio-piece">
-							<a class="project" href="slipstream-internal.html">
-								SlipStream
-							</a>
-						</div>	
-			
-					</section>
-		</div>
-	
-		
-
-
-
-
-
-
-	
-		<!-- NOOBS: if you're working in plain old ES5 JS, do so in dist/js and use this script tag -->
-<!-- 		<script src="dist/js/main.js"></script> -->
-		
-		<!-- LEETS: if you want to use transpiled ES6 JS files, do so in the src/js folder, and use this script tag -->	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-		<script src="src/js/app.js"></script>
-
-		<!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
-
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- NOOBS: if you're working in plain old CSS, do so in dist/css and use these style tags -->
+        <!-- <link rel="stylesheet" href="dist/css/reset.css">
+            <link rel="stylesheet" href="dist/css/main.css"> -->
+        <!-- LEETS: if you want to use transpiled SASS files, do so in src/scss, and use this style tag -->
+        <link rel="stylesheet" href="dist/css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+        <!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
+    </head>
+    <body>
+        <nav class="mobile-nav">
+            <a class="logo" href="index.html"></a>
+            <div class="nav-text">
+                <p class="nav-name">david | babayev</p>
+                <p class="nav-job-title">front end web developer</p>
+            </div>
+            <div class="nav-inner">
+                <ul>
+                    <a href="index.html">
+                        <li>work</li>
+                    </a>
+                    <a href="about.html">
+                        <li>about</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>contact</li>
+                    </a>
+                    <a href="">
+                        <li>resumé</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <div class="main-content">
+            <section class="projects">
+                <a class="portfolio-piece tesla-project" href="tesla-internal.html">
+                    <div class="project ">
+                        <h1>Tesla</h1>
+                    </div>
+                </a>
+                <div class="two-halves-container">
+                    <a class="portfolio-piece pukka-project" href="pukka-internal.html">
+                        <div class="project ">
+                            <h1>Pukka</h1>
+                        </div>
+                    </a>
+                    <a class="portfolio-piece slipstream-project" href="slipstream-internal.html">
+                        <div class="project">
+                            <h1>SlipStream</h1>
+                        </div>
+                         
+                    </a>
+                </div>
+                
+                <a class="portfolio-piece rollingstone-project" href="rollingstone-internal.html">
+                    <div class="project ">
+                         <h1>Rollingstone</h1>
+                    </div>
+                </a>
+                <div class="two-halves-container">
+                    <a class="portfolio-piece google-yelp-project" href="google-yelp.html">
+                        <div class="project">
+                            <h1>Google/Yelp API's</h1>
+                        </div>
+                         
+                    </a>
+                    <a class="portfolio-piece vital-project" href="vital-internal.html">
+                        <div class="project">
+                            <h1>Vital</h1>
+                        </div> 
+                    </a>
+                </div>
+                <a class="portfolio-piece smithsonian-project" href="smithsonian-internal.html">
+                    <div class="project">
+                        <h1>Smithsonian Museum</h1>
+                    </div>
+                     
+                </a>
+                <div class="two-halves-container">
+                    <a class="portfolio-piece one-bite2go-project" href="one-bite-2-go-internal.html">
+                        <div class="project">
+                            <h1>1bite2go</h1>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- NOOBS: if you're working in plain old ES5 JS, do so in dist/js and use this script tag -->
+        <!-- 		<script src="dist/js/main.js"></script> -->
+        <!-- LEETS: if you want to use transpiled ES6 JS files, do so in the src/js folder, and use this script tag -->	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <script src="src/js/app.js"></script>
+        <!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
+    </body>
 </html>

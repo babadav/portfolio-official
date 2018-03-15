@@ -9,5 +9,5 @@ let hamburgerButton = document.querySelector('.hamburger');
 
 hamburgerButton.addEventListener('click', function(){
 	innerNav.classList.toggle('nav-active')
-	console.log(fuck)
+
 })
