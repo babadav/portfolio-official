@@ -31,6 +31,11 @@
         margin: 0 auto;
         margin-bottom: 15%;
         max-width: 850px;
+        transition: all .8s;
+
+        &:hover{
+            transform: scale(1.04);
+        }
 
         img{
             width: 100%;
